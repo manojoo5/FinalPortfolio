@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import CopyrightIcon from '@material-ui/icons/Copyright';
 import {NavLink} from 'react-router-dom';
 import avatar from '../img/avatar.jpg';
 
@@ -29,8 +30,8 @@ function Navigation() {
                     <NavLink to="/contact" activeClassName="active-class" exact>Contact</NavLink>
                 </li>
             </ul>
-            <footer className="footer">
-                <p>@2021 <b>Lorem Ipsum</b></p>
+            <footer className="footer" >
+                <p style={{ display: 'flex', whiteSpace:'pre', justifyContent:'center' }}><CopyrightIcon /> 2021 <b>  Manoj Kumar</b></p>
             </footer>
         </NavigationStyled>
     )
